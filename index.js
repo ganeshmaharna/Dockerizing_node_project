@@ -5,7 +5,7 @@ dotenv.config();
 app.get('/home', (req, res)=>{
     res.json({message:"OK"});
 });
-PORT=3001
+const PORT=process.env.PORT;
 app.listen(PORT,()=>{
     console.log(`Server is started at Port ${PORT}`)
 });
